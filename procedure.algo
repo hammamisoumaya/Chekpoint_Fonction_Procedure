@@ -7,6 +7,7 @@ BEGIN
 FOR i FROM 0 TO V.length STEP 1  DO
     PS=PS+(V[i]*U[i])
 END_FOR
+write (" la puissance vectorielle est :",PS)
 END
 
 
