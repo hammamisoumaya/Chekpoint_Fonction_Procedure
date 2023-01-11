@@ -1,0 +1,34 @@
+PROCEDURE dot_product(U:tab,V:tab)
+VAR
+i: integer
+V,U :tab
+PS:number
+BEGIN
+FOR i FROM 0 TO V.length STEP 1  DO
+    PS=PS+(V[i]*U[i])
+END_FOR
+END
+
+
+ALGORITHM produit scalaire
+VAR
+    U,V:tab
+    P:number
+BEGIN
+write("donner le tableau V")
+read (V)
+write("donner le tableau U")
+read (U)
+   IF (V.length=U.length) THEN
+   dot_product(U,V,P)
+   ELSE
+    write("la taille des deux tableaux doivent etre egaux")
+   END_IF 
+
+IF (P=0)THEN
+    write("ils sont orthogonaux")
+ELSE
+    write("ils ne sont pas orthogonaux")
+END_IF
+
+END
